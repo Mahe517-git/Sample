@@ -23,7 +23,7 @@ export class FormArraySampleComponent implements OnInit {
     return  this.sampleform.controls['documentList'] as FormArray  //this.sampleform.get("documentList") as FormArray// 
   }
 
-  getControl(i:number){
+  getControl(i:any){
     return  (<FormArray>this.sampleform.controls['documentList']).controls[i]//this.sampleform.controls['documentList']['controls'][i].controls as FormGroup
   }
   addDocument(){
@@ -41,8 +41,8 @@ export class FormArraySampleComponent implements OnInit {
     this.getDocumentListArray().removeAt(i)
   }
 
-  getArrayControl(i:number){
-    return this.sampleform.controls.documentList
-  }
+  // getArrayControl(i:number){
+  //   return (<FormArray>this.sampleform.get('documentList')).controls[i]
+  // }
 
 }
