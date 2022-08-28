@@ -41,4 +41,8 @@ export class FormArraySampleComponent implements OnInit {
     this.getDocumentListArray().removeAt(i)
   }
 
+  getArrayControl(i:number){
+    return this.sampleform.controls.documentList
+  }
+
 }
