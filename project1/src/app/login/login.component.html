@@ -1,0 +1,36 @@
+<div class="container">
+<div class="row">
+    <h2 class="text-center">Login</h2>
+</div>
+
+<div class="row justify-content-center"> 
+<div [formGroup]="loginForm"  class="card w-50 p-5 gradiant">
+    
+<div class="row">
+    <div class="col-md-12">
+        <label class="required">UserId</label>
+        <input type="text" class="form-control" formControlName="userName" [ngClass]="{'is-invalid': submitted && f.userName.errors}">
+        <div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+            <div *ngIf="f.userName.errors.required">UserName is required</div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <label>Password</label>
+        <input type="password" class="form-control" formControlName="password" [ngClass]="{'is-invalid':submitted  && f.password.errors}">
+        <div *ngIf="submitted  && f.password.errors" class="invalid-feedback">
+            <span *ngIf="f.password.errors.required">Password Required</span>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-primary m-2"   (click)="login()"  >Login</button>
+        <button class="btn btn-primary m-2" (click)="reset()">Cancel</button>
+    </div>
+</div>
+
+</div>
+</div>
+</div>

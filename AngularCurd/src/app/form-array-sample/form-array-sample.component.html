@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+     <form [formGroup]="sampleform">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Path</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody formArrayName="documentList">
+                <tr *ngFor="let item of getDocumentListArray().controls;let i=index" [formGroupName]="i">
+                    <td><input type="text" class="form-control" formControlName="documentName"></td>
+                    <td><input type="text" class="form-control" formControlName="documentType"></td>
+                    <td><input type="text" class="form-control" formControlName="path"></td>
+                    <td>
+                        <div class="d-flex jestify-content-center">
+                            <button class="btn btn-sm btn-primary m-2" (click)="addDocument()">Add</button>
+                            <button class="btn btn-sm btn-primary m-2" (click)="delete(i)">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form> 
+    </div>
+</div>

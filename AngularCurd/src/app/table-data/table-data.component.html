@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <h2 class="text-center">Table Data</h2>
+    </div>
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Sno</th>
+                <th>id</th>
+                <th (click)="sort('type')">Type</th>
+            </tr>
+            </thead>
+            <tbody>
+                 <tr *ngFor="let item of parentArray;let i=index">
+                    <td>{{i+1}}</td>
+                     <td>{{item.id}}</td>
+                     <td>{{item.type |lowercase}}</td>
+                </tr>    
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div id="testDiv" style="width:100px;height:100px;background-color: red;margin-left: 100px;">
+
+    </div>
+</div>

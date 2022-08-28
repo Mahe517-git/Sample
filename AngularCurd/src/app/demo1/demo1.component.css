@@ -1,0 +1,29 @@
+.card{
+    background-image: linear-gradient(rgb(84, 158, 231),#ffff);
+}
+
+#mainDiv{
+    height: 200px;
+    width: 200px;
+    background-color:rgb(241, 97, 14);
+    border-radius: 100px;
+}
+
+#mainDiv::after{
+    content: '';
+    display: block;
+    border-style: solid rgb(7, 6, 6) 2px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(232, 232, 19);
+    border-radius: 100px;
+}
+#mainDiv::before{
+    content: '';
+    display: block;
+    border-style: solid rgb(7, 6, 6) 2px;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 100px;
+}

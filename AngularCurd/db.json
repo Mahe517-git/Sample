@@ -1,0 +1,272 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "emp": [
+    {
+      "name": "Mahesh",
+      "gender": "1",
+      "mobile": "1234565",
+      "email": "g.maheshbabu6@gmail.com",
+      "hobies": [],
+      "id": 1
+    },
+    {
+      "name": "Hasini",
+      "gender": "0",
+      "mobile": "1234565",
+      "email": "Hasini@gmail.com",
+      "hobies": [],
+      "id": 2
+    },
+    {
+      "name": "janaki",
+      "gender": "0",
+      "mobile": "123456",
+      "email": "janaki@gmail.com",
+      "hobies": [],
+      "id": 3
+    },
+    {
+      "name": "honey",
+      "gender": "0",
+      "mobile": "12246687798",
+      "email": "honey@gmail.com",
+      "hobies": [],
+      "id": 4
+    },
+    {
+      "name": "Venkat",
+      "gender": "1",
+      "mobile": "1224667898",
+      "email": "test@gmail.com",
+      "hobies": [],
+      "id": 5
+    },
+    {
+      "name": "test3",
+      "gender": "1",
+      "mobile": "2",
+      "email": "test3@gmail.com",
+      "hobies": [],
+      "id": 6
+    },
+    {
+      "name": "sandeep",
+      "gender": "1",
+      "mobile": "12245577",
+      "email": "test@gmail.com",
+      "hobies": [],
+      "id": 7
+    },
+    {
+      "name": "Preetham",
+      "gender": "1",
+      "mobile": "77777777777",
+      "email": "preetham@gmail.com",
+      "hobies": [],
+      "id": 8
+    },
+    {
+      "name": "Bhumi",
+      "gender": "0",
+      "mobile": "12458694",
+      "email": "bhumi@gmail.com",
+      "hobies": [],
+      "id": 9
+    }
+  ],
+  "demo1": [
+    {
+      "fName": "Mahesh",
+      "lName": "G",
+      "mName": "babu",
+      "id": 1
+    },
+    {
+      "fName": "Mahesh",
+      "lName": "G",
+      "mName": "babu",
+      "id": 2
+    },
+    {
+      "fName": "s",
+      "lName": "s",
+      "mName": "s",
+      "id": 3
+    },
+    {
+      "fName": "Mahesh1",
+      "lName": "G",
+      "mName": "Babu1",
+      "id": 4
+    },
+    {
+      "fName": "mahesh1",
+      "lName": "G",
+      "mName": "Babu1",
+      "id": 5
+    },
+    {
+      "fName": "Sachin",
+      "lName": "M",
+      "mName": "Tendulkar",
+      "id": 6
+    },
+    {
+      "fName": "Ram",
+      "lName": "S",
+      "mName": "Swarna",
+      "id": 7
+    },
+    {
+      "fName": "Venkat",
+      "lName": "G",
+      "mName": "Krishna",
+      "id": 8
+    },
+    {
+      "fName": "Test1",
+      "lName": "T",
+      "mName": "Test2",
+      "id": 9
+    },
+    {
+      "fName": "New",
+      "lName": "New",
+      "mName": "New",
+      "id": 10
+    },
+    {
+      "fName": "RTRTRT",
+      "lName": "RTRTR",
+      "mName": "GFGFGF",
+      "id": 11
+    }
+  ],
+  "newEmployee": [
+    {
+      "name": "testName",
+      "gender": "1",
+      "mobile": "9492483917",
+      "email": "test@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "TestValidation",
+      "gender": "1",
+      "mobile": "5555555555",
+      "email": "test@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "TestEmail",
+      "gender": "1",
+      "mobile": "1235689755",
+      "email": "test@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "test",
+      "lastName": "",
+      "gender": "1",
+      "mobile": "1234567784",
+      "email": "test@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "test",
+      "lastName": "",
+      "gender": "1",
+      "mobile": "1234567784",
+      "email": "test@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "lastName": "test",
+      "gender": "1",
+      "mobile": "1234567777",
+      "email": "test@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "test123",
+      "lastName": "test",
+      "gender": "1",
+      "mobile": "1234567777",
+      "email": "test@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "test",
+      "lastName": "test123",
+      "gender": "1",
+      "mobile": "1234567947",
+      "email": "test@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "test123",
+      "lastName": "test123",
+      "gender": "1",
+      "mobile": "1255666666",
+      "email": "test@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "test123",
+      "lastName": "test123ki",
+      "gender": "1",
+      "mobile": "1255666666",
+      "email": "test@gmail.com",
+      "id": 10
+    },
+    {
+      "name": "test",
+      "lastName": "test",
+      "gender": "1",
+      "mobile": "1223323288",
+      "email": "test@gmail.com",
+      "id": 11
+    },
+    {
+      "name": "test",
+      "lastName": "test",
+      "gender": "1",
+      "mobile": "1223323288",
+      "email": "test@gmail.com",
+      "id": 12
+    },
+    {
+      "name": "new emp",
+      "lastName": "new emp",
+      "gender": "1",
+      "mobile": "1234567839",
+      "email": "test@gmail.com",
+      "id": 13
+    },
+    {
+      "name": "Sandhya",
+      "lastName": "Sandhya",
+      "gender": "0",
+      "mobile": "1234567123",
+      "email": "test@gmail.com",
+      "id": 14
+    }
+  ]
+}

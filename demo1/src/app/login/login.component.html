@@ -1,0 +1,34 @@
+
+<div class="container">
+
+    <form [formGroup]="loginForm">
+     <div class="row">
+        <div class="col-md-12">
+            <label>Userid</label>
+             <input type="text" class="form-control" formControlName="login" [ngClass]="{'is-invalid':submited && f.login.errors}">
+              <div *ngIf="submited && f.login.errors" class="invalid-feedback">
+                <div *ngIf="f.login.errors.required">login requird</div>
+              </div>
+               
+            </div>
+     </div>
+     <div class="row">
+        <div class="col-md-12">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="password" [ngClass]="{'is-invalid':submited && f.password.errors}">
+            <div *ngIf="submited && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required">login requird</div>
+              </div>
+        </div>
+     </div>
+
+     <div class="row justify-content-center m-5">
+        <div class="d-flex">
+            <button class="btn btn-primary m-5" (click)="login()">Login</button>
+            <button class="btn btn-primary m-5">Cancel</button>
+        </div>
+     </div>
+
+    </form>
+
+</div>

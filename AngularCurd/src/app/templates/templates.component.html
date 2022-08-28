@@ -1,0 +1,7 @@
+<ng-container *ngFor="let item of items;let i=index">
+   <div *ngIf="i%2==0;else sample" [ngClass]="{'text-success':i%2==0,'text-primary':i%2!=0}">{{item}}</div> 
+</ng-container>
+
+<ng-template #sample>
+   <span class="text-primary">Sample text</span> 
+</ng-template>
