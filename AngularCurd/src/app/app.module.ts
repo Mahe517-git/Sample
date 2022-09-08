@@ -18,6 +18,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ChaildComponent } from './chaild/chaild.component';
 import { TableDataComponent } from './table-data/table-data.component';
 import { RxjsDemoComponent } from './rxjs-demo/rxjs-demo.component';
+import { LoginGuard } from './login.guard';
+import { DeactiveGuard } from './deactive.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,7 @@ import { RxjsDemoComponent } from './rxjs-demo/rxjs-demo.component';
     BrowserModule,
     AppRoutingModule,FormsModule,ReactiveFormsModule,HttpClientModule,NgChartsModule
   ],
-  providers: [],
+  providers: [LoginGuard,DeactiveGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

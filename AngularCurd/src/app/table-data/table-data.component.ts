@@ -48,24 +48,28 @@ export class TableDataComponent implements OnInit {
     this.generateTable();
   }
   generateTable(){
-  var obj
-    for(var i=0;i<this.tableData.items.item.length;i++){
-      obj = {id:this.tableData.items.item[i].id,type:this.tableData.items.item[i].type}
-        this.parentArray.push(obj)
-        if(this.tableData.items.item[i]['batters']){
-         for(var j=0;j<this.tableData.items.item[i]['batters'].batter.length;j++){
-          obj = {id:this.tableData.items.item[i]['batters'].batter[j].id,type:this.tableData.items.item[i]['batters'].batter[j].type}
-          this.parentArray.push(obj)
-         }
-        }
-        if(this.tableData.items.item[i]['topping']){
-          for(var k=0;k<this.tableData.items.item[i]['topping'].length;k++){
-            obj = {id:this.tableData.items.item[i]['topping'][k].id,type:this.tableData.items.item[i]['topping'][k].type}
-            this.parentArray.push(obj)
-           }
-        }
-       // console.log(this.parentArray)
-    }
+  // var obj
+  //   for(var i=0;i<this.tableData.items.item.length;i++){
+  //     obj = {id:this.tableData.items.item[i].id,type:this.tableData.items.item[i].type}
+  //       this.parentArray.push(obj)
+  //       if(this.tableData.items.item[i]['batters']){
+  //        for(var j=0;j<this.tableData.items.item[i]['batters'].batter.length;j++){
+  //         obj = {id:this.tableData.items.item[i]['batters'].batter[j].id,type:this.tableData.items.item[i]['batters'].batter[j].type}
+  //         this.parentArray.push(obj)
+  //        }
+  //       }
+  //       if(this.tableData.items.item[i]['topping']){
+  //         for(var k=0;k<this.tableData.items.item[i]['topping'].length;k++){
+  //           obj = {id:this.tableData.items.item[i]['topping'][k].id,type:this.tableData.items.item[i]['topping'][k].type}
+  //           this.parentArray.push(obj)
+  //          }
+  //       }
+  //       console.log(this.parentArray)
+  //   }
+         const newarray=this.tableData.items.item.flat(Infinity)
+    console.log(newarray);
+
+
   }
   ascending:boolean=true;
   sort(key:string){
