@@ -20,6 +20,7 @@ import { TableDataComponent } from './table-data/table-data.component';
 import { RxjsDemoComponent } from './rxjs-demo/rxjs-demo.component';
 import { LoginGuard } from './login.guard';
 import { DeactiveGuard } from './deactive.guard';
+import { ImageUploadComponent } from './image-upload/image-upload.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { DeactiveGuard } from './deactive.guard';
     AddEmployeeComponent,
     ChaildComponent,
     TableDataComponent,
-    RxjsDemoComponent
+    RxjsDemoComponent,
+    ImageUploadComponent
   ],
   imports: [
     BrowserModule,
