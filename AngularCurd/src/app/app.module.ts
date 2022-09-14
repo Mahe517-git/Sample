@@ -21,6 +21,7 @@ import { RxjsDemoComponent } from './rxjs-demo/rxjs-demo.component';
 import { LoginGuard } from './login.guard';
 import { DeactiveGuard } from './deactive.guard';
 import { ImageUploadComponent } from './image-upload/image-upload.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { ImageUploadComponent } from './image-upload/image-upload.component';
     ChaildComponent,
     TableDataComponent,
     RxjsDemoComponent,
-    ImageUploadComponent
+    ImageUploadComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

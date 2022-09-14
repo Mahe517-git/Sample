@@ -6,6 +6,7 @@ import { ChartsComponent } from './charts/charts.component';
 import { DeactiveGuard } from './deactive.guard';
 import { Demo1Component } from './demo1/demo1.component';
 import { FormArraySampleComponent } from './form-array-sample/form-array-sample.component';
+import { HomeComponent } from './home/home.component';
 import { LoginGuard } from './login.guard';
 import { PiechartComponent } from './piechart/piechart.component';
 import { RxjsDemoComponent } from './rxjs-demo/rxjs-demo.component';
@@ -26,7 +27,8 @@ canActivate:[LoginGuard]
 {path:'formArray',component:FormArraySampleComponent},
 {path:'addEmployee',component:AddEmployeeComponent},
 {path:'rxjs',component:RxjsDemoComponent},
-{path:'flatArray',component:TableDataComponent}
+{path:'flatArray',component:TableDataComponent},
+{path:'**',component:HomeComponent}
 ];
 
 @NgModule({
