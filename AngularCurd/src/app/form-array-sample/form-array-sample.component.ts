@@ -11,7 +11,7 @@ export class FormArraySampleComponent implements OnInit {
   sampleform:FormGroup;
   documentform:FormGroup
   constructor(private fb:FormBuilder) { }
-
+  submited:boolean=false;
   ngOnInit(): void {
     this.sampleform=this.fb.group({
       documentList:this.fb.array([])
@@ -24,18 +24,33 @@ export class FormArraySampleComponent implements OnInit {
   }
 
   getControl(i:any){
-    return  (<FormArray>this.sampleform.controls['documentList']).controls[i]//this.sampleform.controls['documentList']['controls'][i].controls as FormGroup
+    return  (<FormArray>this.sampleform.get('documentList')).controls[i]
   }
+
   addDocument(){
   this.documentform=this.fb.group({
       documentName:['',Validators.required],
       documentType:['',Validators.required],
       path:['',Validators.required]
   });
-
   this.getDocumentListArray().push(this.documentform);
    console.log(this.sampleform)
   }
+
+  addForm1:any
+  addBtn(i:number){
+
+  this.addForm1= this.getControl(i);
+  console.log(this.addForm1.valid)
+    // this.documentform=this.fb.group({
+    //     documentName:['',Validators.required],
+    //     documentType:['',Validators.required],
+    //     path:['',Validators.required]
+    // });
+    // this.getDocumentListArray().push(this.documentform);
+    //  console.log(this.sampleform)
+    }
+
 
   delete(i:number){
     this.getDocumentListArray().removeAt(i)

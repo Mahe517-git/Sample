@@ -28,6 +28,7 @@ canActivate:[LoginGuard]
 {path:'addEmployee',component:AddEmployeeComponent},
 {path:'rxjs',component:RxjsDemoComponent},
 {path:'flatArray',component:TableDataComponent},
+{path:'home',component:HomeComponent},
 {path:'**',component:HomeComponent}
 ];
 
