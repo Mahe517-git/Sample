@@ -22,9 +22,11 @@ export class FormArraySampleComponent implements OnInit {
   getDocumentListArray():FormArray{
     return  this.sampleform.controls['documentList'] as FormArray  //this.sampleform.get("documentList") as FormArray// 
   }
-
+  convertion:FormArray
   getControl(i:any){
-    return  (<FormArray>this.sampleform.get('documentList')).controls[i]
+    //this.convertion=<FormArray>this.sampleform.get('documentList')
+    console.log(this.sampleform.get('documentList'))
+   return  (<FormArray>this.sampleform.get('documentList')).controls[i]
   }
 
   addDocument(){
@@ -34,21 +36,22 @@ export class FormArraySampleComponent implements OnInit {
       path:['',Validators.required]
   });
   this.getDocumentListArray().push(this.documentform);
-   console.log(this.sampleform)
+   //console.log(this.sampleform)
   }
 
   addForm1:any
   addBtn(i:number){
-
+    this.submited=true
   this.addForm1= this.getControl(i);
-  console.log(this.addForm1.valid)
-    // this.documentform=this.fb.group({
-    //     documentName:['',Validators.required],
-    //     documentType:['',Validators.required],
-    //     path:['',Validators.required]
-    // });
-    // this.getDocumentListArray().push(this.documentform);
-    //  console.log(this.sampleform)
+  if(this.addForm1.valid){
+    this.documentform=this.fb.group({
+        documentName:['',Validators.required],
+        documentType:['',Validators.required],
+        path:['',Validators.required]
+    });
+    this.getDocumentListArray().push(this.documentform);
+    this.submited=false;
+    }
     }
 
 

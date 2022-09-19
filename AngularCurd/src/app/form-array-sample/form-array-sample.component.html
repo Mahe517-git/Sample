@@ -16,8 +16,12 @@
                     <td><input type="text" class="form-control" formControlName="documentName" 
                         [ngClass]="{'is-invalid':submited && getControl(i).get('documentName')?.errors?.required}">
                     </td>
-                    <td><input type="text" class="form-control" formControlName="documentType"></td>
-                    <td><input type="text" class="form-control" formControlName="path"></td>
+                    <td><input type="text" class="form-control" formControlName="documentType"
+                        
+                        [ngClass]="{'is-invalid':submited && getControl(i).get('documentType')?.errors?.required}"></td>
+                    <td><input type="text" class="form-control" formControlName="path"
+                        
+                        [ngClass]="{'is-invalid':submited && getControl(i).get('path')?.errors?.required}"></td>
                     <td >
                         <div class="d-flex justify-content-center">
                             <button class="btn btn-sm btn-primary m-2" (click)="addBtn(i)">Add</button>
