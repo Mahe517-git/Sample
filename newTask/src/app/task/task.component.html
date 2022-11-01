@@ -1,0 +1,42 @@
+<div class="container card shadow p-5 mt-3">
+    <h2 class="text-center">Task</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Select Columns</h3>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3 pb-4">
+            <label class="mb-3">DB/File Name</label>
+            <div class="column">
+            <div class="d-flex">
+               <p-listbox filterPlaceHolder="Search..." [options]="fileNameList" [filter]="true" class="ml-2" [(ngModel)]="selectedfile" optionLabel="fileName" (onClick)="onSelectFileName()"></p-listbox>
+            </div>  
+            </div>
+        </div>
+        <div class="col-md-3 pb-4">
+            <label class="mb-3">Sheet/Table Name</label>
+            <div class="column">
+            <div class="d-flex">
+              <p-listbox filterPlaceHolder="Search..." [options]="sheet" [filter]="true" class="ml-2" [(ngModel)]="selectedSheet" optionLabel="sheetName" (onClick)="onSelectSheet()"></p-listbox>
+             </div>  
+        </div>
+        </div>
+        <div class="col-md-3 pb-4">
+            <label class="mb-3">Column Name</label>
+            <div class="column">
+            <div class="d-flex">
+                <p-listbox filterPlaceHolder="Search..." [options]="columns" [filter]="true" class="ml-2"></p-listbox>
+             </div>  
+             </div>
+        </div>
+        <div class="col-md-3 pb-4">
+            <label class="mb-3">Map Rule For File Level</label>
+            <div class="column">
+            <div class="d-flex">
+                <p-listbox  filterPlaceHolder="Search..." [options]="rules" [filter]="true" class="ml-2" [(ngModel)]="selectedRule"></p-listbox>
+             </div>  
+             </div>
+        </div>
+    </div>
+</div>

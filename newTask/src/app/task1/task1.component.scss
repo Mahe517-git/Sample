@@ -1,0 +1,37 @@
+option{
+    padding: 10px;
+}
+ul{
+    height: 200px;
+    overflow:scroll;
+    min-height: 435px;
+    border-radius: 0px;  
+}
+
+input[type=text]{
+    border-radius: 0px;  
+}
+
+li{
+    padding: 10px;
+    list-style: none;
+}
+
+select{
+    min-height: 450px;
+    border-radius: 0px;
+}
+
+.column{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(238, 232, 232);
+    padding: 20px;
+    min-height:400px;
+  }
+  label{
+      padding: 5px;
+  }
+  .dev-listBox{
+      margin-left:65px
+  }
